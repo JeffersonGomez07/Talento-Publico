@@ -1,0 +1,130 @@
+body {
+    font-family: Arial;
+}
+
+.divContainerInicioSesion {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 400px;
+    background: #453431;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 20px;
+}
+
+.divContainerInicioSesion #perfil {
+    width: 180px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(41.5% - 50px);
+}
+
+#h1TitleIniciarSesion {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.divContainerInicioSesion label {
+    margin-left: 55px;
+    font-weight: bold;
+    color: white;
+}
+
+.divContainerInicioSesion input {
+    margin-left: 45px;
+    width: 80%;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.txtBackFond {
+    background-color: #6D8B74;
+    border: none;
+    text-indent: 20px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+#btnIniciarSesion {
+    display: flex;
+    margin: 0 auto;
+    border: none;
+    height: 40px;
+    background: #6D8B74;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 9px 30px;
+    margin-bottom: 15px;
+}
+
+#btnIniciarSesion:hover {
+    cursor: pointer;
+}
+
+.divContainerInicioSesion a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+#divContainerLinksCuentaContra {
+    margin: 0 auto;
+}
+
+#divContainerLinksCuentaContra a:first-child {
+    margin-right: 30px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+/* Estas lineas de codigo funcionan para que al autocompletar el input no pierda sus estilos */
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #6D8B74 inset;
+}
+
+.spanAlternarContrasenna {
+    position: absolute;
+    right: 10px;
+    top: 55.6%;
+    left: 77%;
+    transform: translateX(-50% -50%);
+    cursor: pointer;
+    width: 25px;
+    height: 20px;
+    background-image: url("/public/img/imgContrasennaOculta.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.spanAlternarContrasenna.mostrarContrasenna {
+    background-image: url("/public/img/imgContrasennaVisible.png");
+}
+
+#txtContrasenna {
+    padding-right: 45px;
+}

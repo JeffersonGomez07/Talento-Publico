@@ -1,0 +1,90 @@
+body {
+    font-family: Arial;
+}
+
+#divContainerMenuAll{
+    display: flex;
+    flex-direction: row;
+}
+
+#divContainerMenu {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+#btnFiltrarEInvitar {
+    order: 1;
+}
+
+#btnAplicaciones {
+    order: 2;
+}
+
+#btnModificarUsuario {
+    order: 3;
+}
+
+.btnMenu {
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #6D8B74;
+    margin: 0 auto;
+    border: none;
+    border: 1px solid #6D8B74; /* Add border */
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#btnFiltrarEInvitar {
+    background-color: #6D8B74;
+    border-radius: 20px;
+    height: 60px;
+    width: 350px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#btnAplicaciones {
+    background-color: #453431;
+    border-radius: 20px;
+    height: 60px;
+    width: 350px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#btnModificarUsuario {
+    background-color: #6D8B74;
+    border-radius: 20px;
+    height: 60px;
+    width: 350px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#divImagenBienvenida {
+    width: 50%;
+    height: 682px;
+    margin-right: auto;
+    text-align: left;
+    opacity: 50%;
+}
+
+#imgBienvenida {
+    width: 670px;
+    height: 682px;
+}

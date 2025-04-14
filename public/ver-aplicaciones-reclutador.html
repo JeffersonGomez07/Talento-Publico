@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talento Público</title>
+  <link rel="icon" href="./img/imgIconoTalentoPublico.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/stylesHeaderReclutador.css">
+  <link rel="stylesheet" href="./css/stylesVerAplicacionesReclutador.css">
+</head>
+
+<body>
+  <header>
+    <a href="./homepage-reclutador.html">
+      <img id="imgLogoBanner" src="./img/imgLogoTalentoPublico.png" alt="">
+    </a>
+    <h1 id="h1TitleReclutador">Reclutador</h1>
+    <nav>
+      <a href="./invitar-aplicar.html">
+        <img src="./img/imgIconoInvitarYFiltrar.png" alt="Usuario">
+        <span class="spanText">Invitar y filtrar</span>
+      </a>
+      <a href="./ver-aplicaciones-reclutador.html">
+        <img src="./img/imgIconoAplicaciones.png" alt="Usuario">
+        <span class="spanText">Aplicaciones</span>
+      </a>
+      <a href="./modificar-reclutador.html">
+        <img src="./img/imgIconoModificarUsuario.png" alt="Usuario">
+        <span class="spanText">Modificar usuario</span>
+      </a>
+      <a href="" id="aCerrarSesion">
+        <img src="./img/imgIconoCerrarSesion.png" alt="Usuario">
+        <span class="spanText">Cerrar sesión</span>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <div id="divContainerAll">
+      <div id="divContainerCentrarTitulo">
+        <h1 id="h1TitleAplicaciones">Aplicaciones</h1>
+      </div>
+      <div id="divContainerCentrarTabla">
+        <table id="verAplicaciones">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Estudios</th>
+              <th>Experiencia</th>
+              <th>Rol/Puesto</th>
+              <th>Estado solicitud</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  </main>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+  <script src="./js/services/servicesRegistrarUsuario.js"></script>
+  <script src="./js/services/servicesRegistrarEmpresa.js"></script>
+  <script src="./js/services/servicesInvitarEmpleado.js"></script>
+  <script src="./js/controllers/controllersAplicaciones.js"></script>
+
+  <script src="./js/controllers/controllersCerrarSesion.js"></script>
+</body>
+
+</html>

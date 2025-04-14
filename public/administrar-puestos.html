@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talento Público</title>
+  <link rel="icon" href="./img/imgIconoTalentoPublico.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/stylesHeaderManager.css">
+  <link rel="stylesheet" href="./css/stylesAdministrarPuestos.css">
+</head>
+
+<body>
+  <header>
+    <a href="./homepage-manager.html">
+      <img id="imgLogoBanner" src="./img/imgLogoTalentoPublico.png" alt="">
+    </a>
+    <h1 id="h1TitleManager">Manager</h1>
+    <nav>
+      <a href="./crear-puesto.html">
+        <img src="./img/imgIconoCrearPuestos.png" alt="Usuario">
+        <span class="spanText">Crear puestos</span>
+      </a>
+      <a href="./administrar-puestos.html">
+        <img src="./img/imgIconoAdministrarPuestos.png" alt="Usuario">
+        <span class="spanText">Administrar puestos</span>
+      </a>
+      <a href="./ver-aplicaciones-manager.html">
+        <img src="./img/imgIconoAplicaciones.png" alt="Usuario">
+        <span class="spanText">Aplicaciones</span>
+      </a>
+      <a href="./modificar-manager.html">
+        <img src="./img/imgIconoModificarUsuario.png" alt="Usuario">
+        <span class="spanText">Modificar usuario</span>
+      </a>
+      <a href="" id="aCerrarSesion">
+        <img src="./img/imgIconoCerrarSesion.png" alt="Usuario">
+        <span class="spanText">Cerrar sesión</span>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <div id="divContainerAll">
+      <div id="divContainerCentrarTitulo">
+        <h1 id="h1TitleAdministrarPuestos">Administrar puestos</h1>
+      </div>
+      <div id="divContainerCentrarTabla">
+        <table id="informacion-puesto">
+          <thead>
+            <tr>
+              <th>Puesto</th>
+              <th>Vista</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+  <script src="./js/services/servicesCrearPuestos.js"></script>
+  <script src="./js/services/servicesInvitarEmpleado.js"></script>
+  s
+  <script src="./js/controllers/controllersAdministrarPuestos.js"></script>
+  <script src="./js/controllers/controllersCerrarSesion.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Público</title>
+    <link rel="icon" href="./img/imgIconoTalentoPublico.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/stylesHeaderUsuario.css">
+    <link rel="stylesheet" href="./css/stylesPuestos.css">
+</head>
+
+<body>
+    <header>
+        <a href="./homepage-usuario.html">
+            <img id="imgLogoBanner" src="./img/imgLogoTalentoPublico.png" alt="">
+        </a>
+        <nav>
+            <a href="./puestos.html">
+                <img id="imgLogoPuesto" src="./img/imgIconoMaletin.png" alt="Puestos">
+                <span class="spanText">Puestos</span>
+            </a>
+            <a href="./revisar-aplicaciones.html">
+                <img src="./img/imgIconoCarpeta.png" alt="Aplicaciones">
+                <span class="spanText">Aplicaciones</span>
+            </a>
+            <a href="./notificaciones.html">
+                <img src="./img/imgIconoNotificaciones.png" alt="Notificaciones">
+                <span class="spanText">Notificaciones</span>
+            </a>
+            <a href="./panel-usuario.html">
+                <img src="./img/imgIconoUsuarioFinalCafe.png" alt="Usuario">
+                <span class="spanText">Usuario</span>
+            </a>
+            <a href="" id="aCerrarSesion">
+                <img src="./img/imgIconoCerrarSesion.png">
+                <span class="spanText">Cerrar sesión</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="divContainerIzquierdo">
+            <div id="divContainerBuscador">
+                <input type="text" id="buscadorInput" placeholder="Buscar empleo">
+                <button id="btnBuscar"><img src="./img/imgIconoLupa.png" alt=""></button>
+            </div>
+
+            <div id="divContenidoCentrado">
+                <ul id="puestosList"> <!-- Cambio el id para que sea más específico -->
+                    <!-- Los puestos se generarán aquí dinámicamente -->
+                </ul>
+            </div>
+        </div>
+
+        <div id="divContainerDerecho">
+            <div id="divContenidoCentradoDerech">
+
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./js/controllers/controllersPuestos.js"></script>
+        <script src="./js/controllers/controllersCerrarSesion.js"></script>
+    </main>
+</body>
+
+</html>

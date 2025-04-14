@@ -1,0 +1,837 @@
+body {
+  font-family: Arial;
+}
+
+header {
+  height: 80px;
+  background-color: #6D8B74;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#imgLogoBanner {
+  height: 70px;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+#btnIniciarSesion {
+  margin-right: 20px;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  border-width: 2px;
+  border-color: #453431;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#btnRegistrarse {
+  margin-right: 20px;
+  background-color: #453431;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  border-width: 2px;
+  border-color: #453431;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#divContainerBienvenida {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  overflow: hidden;
+}
+
+#divContenidoCentrado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #6D8B74;
+  border-radius: 20px;
+  height: 550px;
+  max-height: 550px;
+  overflow-y: auto;
+  color: white;
+  width: 500px;
+}
+
+#divContenidoCentrado li {
+  width: 500px;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  background-color: #453431;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#divContenidoCentrado li:hover {
+  border: 2px solid #ddd;
+  background-color: #6D8B74;
+}
+
+#divContenidoCentradoDerech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+  background-color: #453431;
+  border-radius: 20px;
+  height: 550px;
+  width: 500px;
+  text-align: left;
+}
+
+#divContenidoCentradoDerech ul {
+  margin-left: 7%;
+  margin-right: 7%;
+  color: white;
+}
+
+#divContenidoCentradoDerech ul li {
+  margin-bottom: 5px;
+}
+
+#divTextoBienvenida {
+  margin-left: 100px;
+  line-height: 25px;
+  text-align: justify;
+  width: 700px;
+  font-size: 15px;
+  color: #453431;
+}
+
+/* Puestos dinamicos */
+#divContenidoCentrado {
+  margin-right: 70px;
+  background-color: #6D8B74;
+  border-radius: 20px;
+  height: 550px;
+  max-height: 450px;
+  width: 500px;
+  overflow-y: auto;
+}
+
+#divContenidoCentrado li {
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  width: 400px;
+  background-color: #453431;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#divContenidoCentrado li:hover {
+  border: 2px solid #ddd;
+  background-color: #6D8B74;
+}
+
+ul {
+  margin-left: 7%;
+  color: white;
+}
+
+#divContenidoCentradoDerech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #453431;
+  border-radius: 20px;
+  height: 550px;
+  width: 100%;
+  text-align: left;
+  margin-top: 120px;
+}
+
+#h1TitlePuesto {
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-left: 7%;
+  text-align: left;
+  color: white;
+}
+
+#h2TitleUbicacionPuesto {
+  font-size: 22px;
+  margin-left: 7%;
+  margin-right: 7%;
+  text-align: left;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#divContenidoCentradoDerech {
+  margin-top: 25px;
+  background-color: #453431;
+  border-radius: 20px;
+  height: 550px;
+  width: 550px;
+  text-align: left;
+  margin-right: 50px;
+  margin-bottom: 60px;
+}
+
+#divContenidoCentradoDerech ul {
+  margin-left: 7%;
+  margin-right: 7%;
+  color: white;
+}
+
+#divContenidoCentradoDerech ul li {
+  margin-bottom: 5px;
+}
+
+.divBotonAplicar {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.btnAplicar {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 auto;
+  width: 50%;
+  cursor: pointer;
+    padding: 15px;
+    background-color: #6D8B74;
+    border-radius: 20px;
+    color: white;
+    border: none;
+}
+
+.spanDinamico {
+  font-weight: bold;
+}
+/* Fin puestos dinamicos */
+
+#divTextoBienvenida button {
+  margin-top: 10px;
+}
+
+#h1TitleBienvenida {
+  font-size: 35px;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-bottom: 2px;
+  line-height: 40px;
+  color: #453431;
+}
+
+#divImagenBienvenida {
+  width: 1000px;
+  margin-left: 160px;
+}
+
+#divImagenBienvenida img {
+  height: 100%;
+  width: 100%;
+}
+
+#divContainerUtilidades {
+  background-color: #453431;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 750px;
+  text-align: justify;
+}
+
+#h1TitleUtilidades {
+  width: 1145px;
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#divContainerUtilidadesPosicion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.h2TitleUtilidad {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px
+}
+
+.divUtilidadIzquierda {
+  width: 500px;
+  margin-bottom: 100px;
+}
+
+.divUtilidadDerecha {
+  width: 500px;
+  margin-left: 130px;
+  margin-bottom: 100px;
+}
+
+#divContainerUtilidades img {
+  width: 50px;
+}
+
+#divContainerUtilidades p {
+  line-height: 20px;
+  font-weight: 300;
+}
+
+/*Tabla*/
+#divContainerTabla {
+  width: 100%;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  height: 650px;
+}
+#divContainerTablaAllTrabajo{
+  width: 99.9%;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  height: 800px;
+}
+
+#divTablaTitulo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#divCentrarTitulo {
+  width: 69.8%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#h1TitleTabla {
+  font-size: 35px;
+  font-weight: bold;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #453431;
+  margin-top: 20px;
+}
+
+#divCentrarTabla {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#divCentrarTablaTrabajo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 950px;
+}
+
+#btnVerMas {
+  background-color: #453431;
+  border-radius: 20px;
+  height: 50px;
+  width: 15%;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;    
+  border: none;   
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 7px;
+  width: 70%;
+}
+
+th {
+  font-size: 20px;
+  background-color: #453431;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  width: 33.33%;
+}
+
+td {
+  font-size: 18px;
+  border-radius: 20px;
+  width: 33.33%;
+  border: none;
+  padding: 35px;
+  vertical-align: middle;
+  background-color: #6D8B74;
+  box-sizing: border-box;
+  color: white;
+  line-height: 20px;
+}
+
+/*Comienza...*/
+#divContainerComienza {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+}
+
+#divTextoComienza {
+  margin-left: 70px;
+  line-height: 25px;
+  text-align: justify;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 500;
+}
+
+#h1TitleComienza {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #453431;
+  width: 80%;
+  display: flex;
+  justify-content: left;
+}
+
+.h3Title {
+  margin-left: 1.1%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #453431;
+  margin-bottom: 5px;
+}
+
+.circle-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.olCircleList li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.spanCircleNumber {
+  position: absolute;
+  left: -30px;
+  top: 1px;
+  background-color: #6D8B74;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.spanCircleContent {
+  margin-left: 10px;
+}
+
+#divContainerComienza li {
+  margin-bottom: 70px;
+  font-size: 18px;
+  color: #453431;
+}
+
+/*Unete*/
+#divContainerUnete {
+  height: 600px;
+}
+
+#divCentrarUnete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 7%;
+}
+
+#h1TextoFin {
+  color: #453431;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#divCentrarImagen {
+  display: flex;
+  justify-content: center;
+}
+
+#divImagenFin {
+  margin-top: 100px;
+  width: 200px;
+}
+
+/*Footer*/
+#divCopyLogo {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+
+#imgLogoFooter {
+  height: 100px;
+  display: flex;
+  margin-right: 20px;
+}
+
+#h1Copy {
+  margin-top: 45px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  font-weight: bold;
+  vertical-align: middle;
+
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #6D8B74;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer li {
+  margin-top: 65px;
+}
+
+footer a {
+  padding: 0 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width:600px) {
+  header {
+    height: 80px;
+    background-color: #6D8B74;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  #imgLogoBanner {
+    height: 70px;
+    padding: 5px;
+    margin-left: 1px;
+  }
+
+
+  #btnRegistrarse {
+    border-radius: 20px;
+    padding: 3px 3px;
+    color: white;
+    border-width: 2px;
+    border-color: #453431;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: #453431;
+  }
+
+
+  #btnIniciarSesion {
+    border-radius: 20px;
+    padding: 3px 3px;
+    color: white;
+    border-width: 2px;
+    border-color: #453431;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: transparent;
+    margin-right: 0px;
+  }
+
+  #divTextoBienvenida {
+    line-height: 25px;
+    text-align: justify;
+    width: 80%;
+    font-size: 12px;
+    color: #453431;
+    margin-left: 5%;
+  }
+
+  #h1TitleBienvenida {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-bottom: 2px;
+    line-height: 40px;
+    color: #453431;
+  }
+
+  #divImagenBienvenida {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #divImagenBienvenida img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #divContainerUtilidades {
+    text-align: center;
+    background-color: #453431;
+    color: white;
+    padding: 50px 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #h1TitleUtilidades {
+    width: 85%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  #divContainerUtilidadesPosicion {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .divUtilidadIzquierda {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .divUtilidadDerecha {
+    margin-left: 0px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  #divContainerUtilidades img {
+    width: 50px;
+  }
+
+  #divContainerUtilidades p {
+    margin: 0 auto;
+    line-height: 20px;
+    font-weight: 300;
+    text-align: justify;
+    width: 80%;
+  }
+
+  #divContainerTabla {
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+  }
+
+  #divCentrarTitulo {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #h1TitleTabla {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    color: #453431;
+  }
+
+  table {
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    margin-left: 0;
+    margin: 0 auto;
+  }
+
+  th {
+    font-size: 15px;
+    padding: 10px 3px;
+    background-color: #453431;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+  }
+
+  td {
+    font-size: 15px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: none;
+    vertical-align: middle;
+    background-color: #6D8B74;
+    color: white;
+    line-height: 20px;
+  }
+
+  #divContainerComienza {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  #divTextoComienza {
+    line-height: 25px;
+    text-align: justify;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 500;
+  }
+
+  #h1TitleComienza {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #453431;
+  }
+
+  #divContainerComienza li {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #453431;
+  }
+
+  #divContainerUnete {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  #h1TextoFin {
+    color: #453431;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #divCentrarImagen {
+    display: flex;
+    justify-content: center;
+  }
+
+  #divImagenFin {
+    margin-top: 30px;
+    width: 150px;
+  }
+
+  footer {
+    background-color: #6D8B74;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  #imgLogoFooter {
+    height: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  #h1Copy {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  footer ul {
+    display: flex;
+  }
+
+  footer a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .h2TitleUtilidad {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  #utilidad {
+    font-size: 12px;
+    margin-left: 30px;
+  }
+
+  #llave,
+  #reloj,
+  #monitor,
+  #edificio {
+    margin-left: 35px;
+  }
+
+  .spanCircleContent {
+    font-weight: bold;
+  }
+
+  .spanCircleNumber {
+    position: absolute;
+    left: -30px;
+    top: 1px;
+    background-color: #6D8B74;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .h3Title {
+    font-weight: bold;
+  }
+}

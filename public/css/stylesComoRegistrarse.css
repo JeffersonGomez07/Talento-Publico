@@ -1,0 +1,63 @@
+body{
+    font-family: Arial;
+}
+
+#divContainerAll{
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    margin-top: 30px;
+}
+
+#divContainerComoRegistrarse{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #453431;
+    border-radius: 20px;
+    width: 750px;
+    height: 500px;
+}
+
+#h1TitleComoRegistrarse{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+#divContainerBotones{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btnComoRegistrarse{
+    border: none;
+    margin-left: 15px;
+    padding: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #6D8B74;
+}
+
+#divContainerYaTienes{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#divContainerYaTienes a{
+    color: white;
+    font-weight: bold;
+}
+
+#divContainerBotones button img {
+    width: 200px;
+}
+
+.h2TitleBoton{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}

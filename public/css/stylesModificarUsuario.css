@@ -1,0 +1,331 @@
+body {
+  font-family: Arial;
+}
+
+#divContainerRegistro {
+  width: 60%;
+  background-color: #453431;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px auto;
+  margin-bottom: 7px;
+  margin-top: 20px;
+}
+
+#h1TitleCrearRegistro {
+  text-align: center;
+  padding: 10px;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 20px;
+  color: white;
+  margin-top: 5px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.divFila {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.txtBackfond {
+  background-color: #6D8B74;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  height: 40px;
+  text-indent: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.txtBackfondFotoCurri {
+  padding: 10px;
+  border-radius: 20px;
+  border: 3px dashed #AAAEB4;
+}
+
+#divFotoPerfil {
+  display: flex;
+  flex-direction: row;
+}
+
+#fotoUsuario {
+  margin-left: 7px;
+  margin-top: 2px;
+  width: 42px;
+  height: 42px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#btnFotoUsuario {
+  margin-left: 4px;
+  margin-top: 5px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 85%;
+  border-radius: 20px;
+  border: 3px dashed #AAAEB4;
+  background-color: transparent;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.txtBackFondEstudios {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #6D8B74;
+  text-indent: 20px;
+  width: 42.5%;
+  font-size: 15px;
+  color: white;
+}
+
+.txtBackFondEstudiosNombre,
+.txtBackFondEstudiosUniversidad {
+  width: 42.5%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #6D8B74;
+  text-indent: 20px;
+  font-size: 15px;
+  color: white;
+}
+
+.txtBackFondExperiencia {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #6D8B74;
+  text-indent: 20px;
+  width: 42.5%;
+  font-size: 15px;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.divFilaColumnIz {
+  margin-top: 15px;
+  font-size: 15px;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+
+.divFilaColumnDe {
+  margin-top: 15px;
+  font-size: 15px;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-left: 20px;
+}
+
+input {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+#divContainerNombreAll {
+  display: flex;
+  flex-direction: row;
+}
+
+#txtNombre {
+  width: 390px;
+}
+
+#divContainerApellidosAll {
+  display: flex;
+  flex-direction: row;
+}
+
+#divContainerApellido1 {
+  width: 99%;
+}
+
+#divContainerApellido2 {
+  width: 99%;
+}
+
+.divFilaColumnDos {
+  margin-left: 20px;
+  color: white;
+}
+
+.divContainerRadioButtons {
+  font-size: 10px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 35px;
+}
+
+.divContainerRadioButtons label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.divContainerRadioButtons input[type="radio"] {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.divContainerRadioButtons label {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#divContainerButton {
+  display: flex;
+  justify-content: center;
+  height: min-content;
+}
+
+#divContainerCentrarBoton {
+  margin: 0 auto;
+}
+
+#btnEnviar {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background-color: #6D8B74;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#divContainerLinksCuenta {
+  margin: 0 auto;
+  color: white;
+}
+
+#divContainerLinksCuenta a {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.btnAgregar {
+  color: white;
+  border-radius: 20px;
+  background-color: #6D8B74;
+  text-indent: 20px;
+  padding: 10px 0px;
+  margin-top: 5px;
+  width: 98%;
+  border: none;
+}
+
+.btnEliminar {
+  color: white;
+  border-radius: 20px;
+  background-color: #D82F2F;
+  text-indent: 20px;
+  width: 98%;
+  padding: 10px 30px;
+  margin-top: 5px;
+  border: none;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.errorRadio {
+  outline: 1px solid red;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 30px #6D8B74 inset !important;
+  -webkit-text-fill-color: white !important;
+  background-color: #6D8B74 !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+.labelHead2 {
+  margin-top: 25px;
+}
+
+.labelHead3 {
+  margin-top: 25px;
+}
+
+#txtEstudiosInicio1[type="date"]::-webkit-calendar-picker-indicator,
+#txtEstudiosInicio2[type="date"]::-webkit-calendar-picker-indicator,
+#txtEstudiosInicio3[type="date"]::-webkit-calendar-picker-indicator,
+#txtEstudiosFinal1[type="date"]::-webkit-calendar-picker-indicator,
+#txtEstudiosFinal2[type="date"]::-webkit-calendar-picker-indicator,
+#txtEstudiosFinal3[type="date"]::-webkit-calendar-picker-indicator,
+#txtExperienciaInicio1[type="date"]::-webkit-calendar-picker-indicator,
+#txtExperienciaInicio2[type="date"]::-webkit-calendar-picker-indicator,
+#txtExperienciaInicio3[type="date"]::-webkit-calendar-picker-indicator,
+#txtExperienciaFinal1[type="date"]::-webkit-calendar-picker-indicator,
+#txtExperienciaFinal2[type="date"]::-webkit-calendar-picker-indicator,
+#txtExperienciaFinal3[type="date"]::-webkit-calendar-picker-indicator{
+  filter: invert(1);
+}
+
+#btnSubmit {
+  font-size: 20px;
+  background-color: #6D8B74;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#btnCancel {
+  background-color: #D82F2F;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#btnSubmit:hover {
+  background-color: #3c8b4f;
+}
+
+#btnCancel:hover {
+  background-color: #f4220a;
+}

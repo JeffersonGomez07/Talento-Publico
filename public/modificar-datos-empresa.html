@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Público</title>
+    <link rel="icon" href="./img/imgIconoTalentoPublico.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/stylesHeaderAdmin.css">
+    <link rel="stylesheet" href="./css/stylesModificarDatosEmpresa.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="./homepage-admin.html">
+                <img id="imgLogoBanner" src="./img/imgLogoTalentoPublico.png" alt="">
+            </a>
+            <h1 id="h1TitleAdministrador">Administrador</h1>
+            <nav>
+                <a href="./invitar-empleado.html">
+                    <img src="./img/imgIconoInvitarEmpleado.png" alt="Usuario">
+                    <span class="spanText">Invitar empleado</span>
+                </a>
+                <a href="./administrar-empleados.html">
+                    <img src="./img/imgIconoAdministrarEmpleados.png" alt="Usuario">
+                    <span class="spanText">Administrar empleados</span>
+                </a>
+                <a href="./modificar-empresa.html">
+                    <img src="./img/imgIconoModificarEmpresa.png" alt="Usuario">
+                    <span class="spanText">Modificar empresa</span>
+                </a>
+                <a href="./ver-aplicaciones.html">
+                    <img src="./img/imgIconoAplicaciones.png" alt="Usuario">
+                    <span class="spanText">Aplicaciones</span>
+                </a>
+                <a href="" id="aCerrarSesion">
+                    <img src="./img/imgIconoCerrarSesion.png" alt="Usuario">
+                    <span class="spanText">Cerrar sesión</span>
+                </a>
+            </nav>
+        </header>
+        <div id="divContainerAll">
+            <div id="divContainerRegistro">
+                <h1 id="h1TitleRegistro">Modificar datos</h1>
+                <div id="divContainerForm">
+                    <form id="formRegistroEmpresa" action="">
+                        <label for="">Nombre de la empresa*</label>
+                        <input type="text" id="txtNombreEmpresa" class="txtBackfond" required>
+                        <label for="">Correo electronico*</label>
+                        <input type="email" id="txtCorreo" class="txtBackfond" required>
+                        <label for="">Foto de perfil</label>
+                        <div id="divFotoPerfil">
+                            <button id="btnFotoUsuario" type="button">Subir foto</button>
+                            <img id="fotoUsuario">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="divContainerButton">
+                <button Id="btnCancel" type="button">Volver</button>
+                <button Id="btnSubmit" type="button">Modificar</button>
+            </div>
+        </div>
+    </main>
+    <!--Axios-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!--Script Cloudinary-->
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+    <!--Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <!-- Servicio imagen -->
+    <script src="./js/services/servicesImagen.js"></script>
+    <!-- Servicio registrar empresa -->
+    <script src="./js/services/servicesRegistrarEmpresa.js"></script>
+    <!-- Controlador registro -->
+    <script src="./js/controllers/controllersModificarDatosEmpresa.js"></script>
+    <script src="./js/controllers/controllersCerrarSesion.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+body {
+    font-family: Arial;
+}
+
+#divContainerAll {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+#divContainerRegistro {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #453431;
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+}
+
+#h1TitleRegistro {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+#divContainerForm {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#divContainerForm form label {
+    margin: 0 15px;
+    margin-bottom: 3px;
+    width: 80%;
+    margin-top: 15px;
+    color: white;
+    font-weight: bold
+}
+
+#divFotoPerfil {
+    display: flex;
+    flex-direction: row;
+}
+
+#fotoUsuario {
+    margin-left: 10px;
+    margin-top: 2px;
+    width: 45px;
+    height: 45px;
+    background-color:  white;
+    border-radius: 50%;
+}
+
+#btnFotoUsuario {
+    margin-left: 4px;
+    margin-top: 5px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 85%;
+    border-radius: 20px;
+    border: 3px dashed #AAAEB4;
+    background-color: transparent;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+#divContainerForm form input {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 18px;
+}
+
+
+#divContainerForm form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.txtBackfond {
+    background-color: #6D8B74;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 25px;
+    text-indent: 20px;
+    box-sizing: border-box;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #6D8B74 inset;
+}
+
+#ContainerBoton {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#btnRegistrarse {
+    padding: 15px 25px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: #6D8B74;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#divContainerYaTienes {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#divContainerYaTienes a {
+    color: white;
+    font-weight: bold;
+}
+
+.error {
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.spanAlternarContrasenna {
+    position: absolute;
+    right: 10px;
+    top: 364px;
+    left: 820px;
+    cursor: pointer;
+    width: 25px;
+    height: 20px;
+    background-image: url("/public/img/imgContrasennaOculta.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.spanAlternarContrasenna.mostrarContrasenna {
+    background-image: url("/public/img/imgContrasennaVisible.png");
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Público</title>
+    <link rel="icon" href="./img/imgIconoTalentoPublico.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/stylesHeaderUsuario.css">
+    <link rel="stylesheet" href="./css/stylesDescripcionAplicacion.css">
+</head>
+
+<body>
+    <header>
+        <a href="./homepage-usuario.html">
+            <img id="imgLogoBanner" src="./img/imgLogoTalentoPublico.png" alt="" />
+        </a>
+        <nav>
+            <a href="./puestos.html">
+                <img src="./img/imgIconoMaletin.png" alt="Puestos">
+                <span class="spanText">Puestos</span>
+            </a>
+            <a href="./revisar-aplicaciones.html">
+                <img src="./img/imgIconoCarpeta.png" alt="Aplicaciones">
+                <span class="spanText">Aplicaciones</span>
+            </a>
+            <a href="./notificaciones.html">
+                <img src="./img/imgIconoNotificaciones.png" alt="Notificaciones">
+                <span class="spanText">Notificaciones</span>
+            </a>
+            <a href="./panel-usuario.html">
+                <img src="./img/imgIconoUsuarioFinalCafe.png" alt="Usuario">
+                <span class="spanText">Usuario</span>
+            </a>
+            <a href="" id="aCerrarSesion">
+                <img src="./img/imgIconoCerrarSesion.png">
+                <span class="spanText">Cerrar sesión</span>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <h1 id="h1Title">Software development</h1>
+
+        <div id="divContainerPuestos">
+
+            <div class="divFila">
+                <div class="divFilaColumn">
+                    <h2 class="h2Title">Estudios</h2>
+                </div>
+                <div class="divFilaColumn">
+                    <button onclick="window.location.href = './descripcion-estudios.html';" id="btnDetallesEstudios"
+                        class="btnVerDetalles">Ver detalles</button>
+                </div>
+            </div>
+            <div class="divFila">
+                <div class="divFilaColumn">
+                    <h2 class="h2Title">Experiencia Laboral</h2>
+                </div>
+                <div class="divFilaColumn">
+                    <div>
+                        <button onclick="window.location.href = './descripcion-experiencia.html';"
+                            id="btnVerDetallesExperiencia" class="btnVerDetalles">Ver detalles</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="divContainerButton">
+            <button id="btnCancelar" type="button">Cancelar</button>
+            <button id="btnPublicar" type="button">Enviar Aplicacion</button>
+        </div>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="./js/services/servicesCrearPuestos.js"></script>
+    <script src="./js/services/servicesRegistrarUsuario.js"></script>
+    <script src="./js/controllers/controllersDescripcionAplicacion.js"></script>
+    <script src="./js/controllers/controllersCerrarSesion.js"></script>
+</body>
+
+</html>

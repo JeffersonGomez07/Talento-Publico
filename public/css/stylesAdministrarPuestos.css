@@ -1,0 +1,81 @@
+body {
+  font-family: Arial;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 7px;
+  width: 50%;
+}
+
+th {
+  font-size: 15px;
+  background-color: #453431;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+td {
+  font-size: 15px;
+  padding: 10px;
+  background-color: #6D8B74;
+  border-radius: 20px;
+  width: 100px;
+  font-weight: bold;
+}
+
+#divContainerAll {
+  width: 100%;
+  display: inline-block;
+  margin-top: 120px;
+  justify-content: center;
+  text-align: center;
+}
+
+#h1TitleAdministrarPuestos {
+  background-color: #6D8B74;
+  width: 70%;
+  padding: 20px 0px;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+#divContainerCentrarTabla {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#divContainerCentrarTitulo {
+  width: 69.8%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.btnModificar{
+  margin-left: 5px;
+  font-size: 12px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #F0E9D7;
+  font-weight: bold;
+}
+
+.btnEliminar{
+  font-size: 12px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #D1C8BF;
+  font-weight: bold;
+}

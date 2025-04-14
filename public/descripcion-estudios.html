@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talento Público</title>
+  <link rel="icon" href="./img/imgIconoTalentoPublico.png" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/stylesHeaderUsuario.css">
+  <link rel="stylesheet" href="./css/stylesDescripcionEstudios.css" />
+</head>
+
+<body>
+  <header>
+    <a href="./homepage-usuario.html">
+      <img id="imgLogoBanner" src="./img/imgLogoTalentoPublico.png" alt="" />
+    </a>
+    <nav>
+      <a href="./puestos.html">
+        <img src="./img/imgIconoMaletin.png" alt="Puestos" />
+        <span class="spanText">Puestos</span>
+      </a>
+      <a href="./revisar-aplicaciones.html">
+        <img src="./img/imgIconoCarpeta.png" alt="Aplicaciones">
+        <span class="spanText">Aplicaciones</span>
+    </a>
+      <a href="./notificaciones.html">
+        <img src="./img/imgIconoNotificaciones.png" alt="Notificaciones" />
+        <span class="spanText">Notificaciones</span>
+      </a>
+      <a href="./panel-usuario.html">
+        <img src="./img/imgIconoUsuarioFinalCafe.png" alt="Usuario">
+        <span class="spanText">Usuario</span>
+      </a>
+      <a href="" id="aCerrarSesion">
+        <img src="./img/imgIconoCerrarSesion.png">
+        <span class="spanText">Cerrar sesión</span>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <h1 id="h1TitleEstudio">Estudios</h1>
+    <div id="divContainerEstudios">
+      <div id="divContainerEstudiosAll">
+        <div class="estudios">
+          <p id="nombreestudio1">Nombre estudio</p>
+          <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+          <p id="nombreuniversidad1">Nombre universidad</p>
+          <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+          <p id="fechainicio1">Fecha inicio</p>
+          <p>&nbsp;&nbsp;-&nbsp;&nbsp;</p>
+          <p id="fechafinal1">Fecha finalización</p>
+        </div>
+        <div class="estudiostop">
+          <p id="nombreestudio2">Nombre estudio</p>
+          <p class="espacioest2">&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+          <p id="nombreuniversidad2">Nombre universidad</p>
+          <p class="espacioest2">&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+          <p id="fechainicio2">Fecha inicio</p>
+          <p class="espacioest2">&nbsp;&nbsp;-&nbsp;&nbsp;</p>
+          <p id="fechafinal2">Fecha finalización</p>
+        </div>
+        <div class="estudiostop">
+          <p id="nombreestudio3">Nombre estudio</p>
+          <p class="espacioest3">&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+          <p id="nombreuniversidad3">Nombre universidad</p>
+          <p class="espacioest3">&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+          <p id="fechainicio3">Fecha inicio</p>
+          <p class="espacioest3">&nbsp;&nbsp;-&nbsp;&nbsp;</p>
+          <p id="fechafinal3">Fecha finalización</p>
+        </div>
+      </div>
+      <div id="divContainerButton">
+        <button onclick="window.location.href = './descripcion-aplicacion.html';" id="btnVolver"
+          type="button">Volver</button>
+      </div>
+  </main>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="./js/services/servicesRegistrarUsuario.js"></script>
+  <script src="./js/controllers/controllersDescripcionEstudios.js"></script>
+  <script src="./js/controllers/controllersCerrarSesion.js"></script>
+</body>
+
+</html>

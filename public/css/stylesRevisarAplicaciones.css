@@ -1,0 +1,115 @@
+#divContainerTituloRevisarAplicaciones {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #6D8B74;
+    border-radius: 20px;
+    margin-top: 40px;
+    text-align: center;
+    width: 900px;
+}
+
+#h1TitleRevisarAplicaciones {
+    color: white;
+    font-size: 35px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+#divContainerBusqueda {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+#inputBuscarDate {
+    padding: 5px 48px;
+    background-color: #453431;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    text-indent: 5px;
+}
+
+#inputBuscarDateTexto {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 182px;
+    background-color: #453431;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+#inputBuscarDateTexto::placeholder {
+    text-align: center;
+    color: white;
+}
+
+#btnBuscar {
+    padding: 10px 20px;
+    background-color: #6D8B74;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#inputBuscarDate[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+#divContainerCentrarTabla {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 7px;
+    width: 70%;
+}
+
+th {
+    background-color: #453431;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+td {
+    padding: 10px;
+    background-color: #6D8B74;
+    border-radius: 20px;
+    width: 100px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.btnModificar {
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #F0E9D7;
+    font-weight: bold;
+}
+
+.btnEliminar {
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #D1C8BF;
+    font-weight: bold;
+}

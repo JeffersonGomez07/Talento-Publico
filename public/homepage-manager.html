@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager</title>
+    <link rel="icon" href="./img/imgIconoTalentoPublico.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/stylesHeaderManager.css">
+    <link rel="stylesheet" href="./css/stylesHomepageManager.css">
+</head>
+
+<body>
+    <header>
+        <a href="./homepage-manager.html">
+            <img id="imgLogoBanner" src="./img/imgLogoTalentoPublico.png" alt="">
+        </a>
+        <h1 id="h1TitleManager">Manager</h1>
+        <nav>
+            <a href="./crear-puesto.html">
+                <img src="./img/imgIconoCrearPuestos.png" alt="Crear puestos">
+                <span class="spanText">Crear puestos</span>
+            </a>
+            <a href="./administrar-puestos.html">
+                <img src="./img/imgIconoAdministrarPuestos.png" alt="Administrar puestos">
+                <span class="spanText">Administrar puestos</span>
+            </a>
+            <a href="./ver-aplicaciones-manager.html">
+                <img src="./img/imgIconoAplicaciones.png" alt="Aplicaciones">
+                <span class="spanText">Aplicaciones</span>
+            </a>
+            <a href="./modificar-manager.html">
+                <img src="./img/imgIconoModificarUsuario.png" alt="Modificar usuario">
+                <span class="spanText">Modificar usuario</span>
+            </a>
+            <a href="" id="aCerrarSesion">
+                <img src="./img/imgIconoCerrarSesion.png" alt="Cerrar sesión">
+                <span class="spanText">Cerrar sesión</span>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div id="divContainerMenuAll">
+            <div id="divImagenBienvenida">
+                <img id="imgBienvenida" src="./img/imgSlothFondoflipped.png" alt="">
+            </div>
+            <div id="divContainerMenu">
+                <button onclick="window.location.href = './crear-puesto.html';" id="btnCrearPuestos" class="btnMenu">Crear
+                    puestos</button>
+                <button onclick="window.location.href = './administrar-puestos.html';" id="btnAdministrarPuestos"
+                    class="btnMenu">Administrar puestos</button>
+                <button onclick="window.location.href = './ver-aplicaciones-manager.html';" id="btnAplicaciones"
+                    class="btnMenu">Aplicaciones</button>
+                <button onclick="window.location.href = './modificar-manager.html';" id="btnModificarUsuario"
+                    class="btnMenu">Modificar usuario</button>
+            </div>
+        </div>
+    </main>
+    <script src="./js/controllers/controllersCerrarSesion.js"></script>
+</body>
+
+</html>

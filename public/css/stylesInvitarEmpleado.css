@@ -1,0 +1,116 @@
+body {
+  font-family: Arial;
+}
+
+#divContainerTnvitar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+#formDatosEmpleado{
+  display: flex;
+  flex-direction: column;
+}
+
+#h1TitleInvitarEmpleado {
+  text-align: center;
+  padding: 8px 0px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 20px;
+  color: white;
+  margin-top: 5px;
+  font-size: 25px;
+  font-weight: bold;  
+  background-color: #6D8B74;
+  margin-bottom: 10px;
+}
+
+label{
+  font-size: 15px;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 3px;
+  margin-top: 5px;
+}
+
+#divContainerButton{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#btnSubmit {
+  font-size: 20px;
+  background-color: #6D8B74;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#btnCancel {
+  background-color: #D82F2F;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#btnSubmit:hover {
+  background-color: #3c8b4f;
+}
+
+#btnCancel:hover {
+  background-color: #f4220a;
+}
+
+.divContainerDatos{
+  display: flex;
+  flex-direction: column;
+  background-color: #453431;
+  border-radius: 20px;
+  padding: 30px 60px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.txtBackfond{
+background-color: #6D8B74;
+border: none;
+border-radius: 20px;
+width: 300px;
+height: 35px;
+text-indent: 20px;
+cursor: pointer;
+color: white;
+font-size: 15px;
+box-sizing: border-box;
+margin-bottom: 20px;
+}
+
+.error{
+  border: 1px solid red;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #6D8B74 inset;
+}
+ 
+#divContainerBienvenida{
+  display: flex;
+  flex-direction: column;
+}

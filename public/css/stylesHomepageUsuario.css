@@ -1,0 +1,103 @@
+main {
+    display : flex;
+    flex-direction: row-reverse;
+}
+
+#divContainerMenu {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+#btnBuscarPuestos {
+    order: 1;
+}
+
+#btnRevisarAplicaciones {
+    order: 2;
+}
+
+#btnNotificaciones {
+    order: 3;
+}
+
+#btnInformacionPersonal {
+    order: 4;
+}
+
+
+.btnMenu {
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #6D8B74;
+    border: 1px solid #6D8B74; /* Add border */
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+}
+
+#btnBuscarPuestos {
+    background-color: #6D8B74;
+    border-radius: 20px;
+    height: 60px;
+    width: 350px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+        
+}
+
+#btnRevisarAplicaciones {
+    background-color: #453431;
+    border-radius: 20px;
+    height: 60px;
+    width: 350px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#btnNotificaciones {
+    background-color: #6D8B74;
+    border-radius: 20px;
+    height: 60px;
+    width: 350px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#btnInformacionPersonal {
+    background-color: #453431;
+    border-radius: 20px;
+    height: 60px;
+    width: 350px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#divImagenBienvenida {
+    width: 50%;
+    height: 682px;
+    margin-right: auto;
+    text-align: left;
+    opacity: 50%;
+}
+
+#imgBienvenida{
+    width: 670px;
+    height: 682px;
+}

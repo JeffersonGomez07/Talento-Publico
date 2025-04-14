@@ -1,0 +1,166 @@
+body {
+    font-family: Arial;
+}
+
+#divContainerIzquierdo {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+#divContainerBuscador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-radius: 20px;
+    background-color: #453431;
+    color: white;
+    width: 1297px;
+}
+
+#buscadorInput {
+    margin-left: 2%;
+    padding: 5px 37%;
+    background-color: #453431;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+#buscadorInput::placeholder {
+    text-align: center;
+    color: white;
+}
+
+#btnBuscar {
+    margin-right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#btnBuscar img {
+    width: 25px;
+}
+
+#divContenidoCentrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #6D8B74;
+    border-radius: 20px;
+    height: 550px;
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+#divContenidoCentrado li {
+    width: 500px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    background-color: #453431;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#divContenidoCentrado li:hover {
+    border: 2px solid #ddd;
+    background-color: #6D8B74;
+}
+
+ul {
+    margin-left: 7%;
+    color: white;
+}
+
+#divContainerDerecho {
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#divContainerSelectAll {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 8px;
+    padding: 4px 0;
+}
+
+.divContainerSelect select,
+button {
+    margin-right: 15px;
+    padding: 15px;
+    background-color: #6D8B74;
+    border-radius: 20px;
+    color: white;
+    border: none;
+}
+
+#divContenidoCentradoDerech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #453431;
+    border-radius: 20px;
+    height: 550px;
+    width: 100%;
+    text-align: left;
+    margin-top: 90px;
+}
+
+#h1TitlePuesto {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-left: 7%;
+    text-align: left;
+    color: white;
+
+}
+
+#h2TitleUbicacionPuesto {
+    font-size: 22px;
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: left;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#divContenidoCentradoDerech ul {
+    margin-left: 7%;
+    margin-right: 7%;
+    color: white;
+}
+
+#divContenidoCentradoDerech ul li {
+    margin-bottom: 5px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.divBotonAplicar {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.btnAplicar {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 50%;
+    cursor: pointer;
+}

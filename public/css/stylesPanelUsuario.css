@@ -1,0 +1,155 @@
+body {
+    font-family: Arial;
+}
+
+#h1TitlePaneldeUsuario {
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 23%;
+}
+
+#divContainerInfo .divImagen {
+    display: flex;
+    justify-content: center;
+}
+
+#divContainerInfo .divImagen .divImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#divContainerInfo .divImagen .divImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#btnModificarContrasenna {
+    background-color: #6D8B74;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+#btnCerrarSesion {
+    background-color: #6D8B74;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+#divContainerBienvenida {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    overflow: hidden;
+}
+
+#divContainerInfo {
+    margin-right: 20px;
+    background-color: #453431;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    border-width: 2px;
+    border-color: #453431;
+    margin-top: 10px;
+    width: 300px;
+}
+
+#h2TitleInformacion{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#h2TitleEstudios, #h2TitleExperiencia{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p{
+    font-size: 17px;
+}
+
+#divContainerNuevo {
+    border-radius: 20px;
+    background-color: #453431;
+    width: 900px;
+    height: 500px;
+}
+
+#divContainerEstudiosYExperiencia {
+    padding: 10px 20px;
+    color: white;
+    border-width: 2px;
+    border-color: #453431;
+}
+
+
+#divDivisionCuatro button {
+    margin-top: 10px;
+    background-color: #6D8B74;
+}
+
+#divContainerButtons {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 600px;
+    left: 600px;
+}
+
+#divContainerButtons button {
+    height: 45px;
+    width: 225px;
+    margin-right: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.estudios{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.experiencia{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+
+#divContainerExperiencia{
+    margin-top: 50px;
+}
+
+#divContainerNombre{
+    display: flex;
+    flex-direction: row;
+}
+
+#nombre, #apellido1{
+    margin-right: 5px;
+}

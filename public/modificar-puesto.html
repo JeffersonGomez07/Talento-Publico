@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Público</title>
+    <link rel="icon" href="./img/imgIconoTalentoPublico.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/stylesHeaderManager.css">
+    <link rel="stylesheet" href="./css/stylesCrearPuesto.css">
+</head>
+
+<body>
+    <header>
+        <a href="./homepage-manager.html">
+            <img id="imgLogoBanner" src="./img/imgLogoTalentoPublico.png" alt="">
+        </a>
+        <h1 id="h1TitleManager">Manager</h1>
+        <nav>
+            <a href="./crear-puesto.html">
+                <img src="./img/imgIconoCrearPuestos.png" alt="Usuario">
+                <span class="spanText">Crear puestos</span>
+            </a>
+            <a href="./administrar-puestos.html">
+                <img src="./img/imgIconoAdministrarPuestos.png" alt="Usuario">
+                <span class="spanText">Administrar puestos</span>
+            </a>
+            <a href="./ver-aplicaciones-manager.html">
+                <img src="./img/imgIconoAplicaciones.png" alt="Usuario">
+                <span class="spanText">Aplicaciones</span>
+            </a>
+            <a href="./modificar-manager.html">
+                <img src="./img/imgIconoModificarUsuario.png" alt="Usuario">
+                <span class="spanText">Modificar usuario</span>
+            </a>
+            <a href="" id="aCerrarSesion">
+                <img src="./img/imgIconoCerrarSesion.png" alt="Usuario">
+                <span class="spanText">Cerrar sesión</span>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div id="divContainerPuestos">
+
+            <h1 id="h1TitleCrearPuestos">Modificación de puestos</h1>
+
+            <form action="" id="formDatosPuesto">
+                <div class="divFila">
+                    <div class="divFilaColumn">
+                        <label for="puesto">Puesto:</label>
+                        <input type="text" id="txtPuesto" class="txtBackFond" name="puesto" required>
+                    </div>
+                    <div class="divFilaColumn">
+                        <label for="horario">Horario:</label>
+                        <select id="slctHorario" class="txtBackFond" name="horario" required>
+                            <option value=""></option>
+                            <option value="Diurno">Diurno</option>
+                            <option value="Nocturno">Nocturno</option>
+                            <option value="Mixto">Mixto</option>
+                        </select>
+                    </div>
+                    <div class="divFilaColumn">
+                        <label for="salario">Salario:</label>
+                        <select id="slctSalario" class="txtBackFond" name="salario" required>
+                            <option value=""></option>
+                            <option>250.000 - 350.000</option>
+                            <option>350.000 - 450.000</option>
+                            <option>450.000 - 550.000</option>
+                            <option>550.000 - 650.000</option>
+                            <option>650.000 - 750.000</option>
+                            <option>850.000 - 950.000</option>
+                            <option>950.000 - 1.100.000</option>
+                            <option>1.100.000 o superior </option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="divFila">
+                    <div class="divFilaColumn">
+                        <label for="responsabilidad">Responsabilidad:</label>
+                        <select id="slctResponsabilidad" class="txtBackFond" name="responsabilidad" required>
+                            <option value=""></option>
+                            <option value="Gerencia">Gerencia</option>
+                            <option value="Supervisor">Supervisor</option>
+                            <option value="Recursos Humanos">Recursos Humanos</option>
+                            <option value="Servicio al Cliente">Servicio al Cliente</option>
+                            <option value="Finanzas">Finanzas</option>
+                            <option value="Ventas">Ventas</option>
+                            <option value="Operaciones">Operaciones</option>
+                            <option value="Mantenimiento">Mantenimiento</option>
+                            <option value="Limpieza">Limpieza</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="divFilaColumn">
+                        <label for="provincia">Provincia:</label>
+                        <select id="slctProvincia" class="txtBackFond" name="provincia" required>
+                            <option value=""></option>
+                            <option value="San Jose">San Jose</option>
+                            <option value="Alajuela">Alajuela</option>
+                            <option value="Heredia">Heredia</option>
+                            <option value="Cartago">Cartago</option>
+                            <option value="Guanacaste">Guanacaste</option>
+                            <option value="Puntarenas">Puntarenas</option>
+                            <option value="Limon">Limon</option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="divFilaColumn">
+                        <label for="Canton">Cantón:</label>
+                        <input type="text" id="txtCanton" class="txtBackFond" name="canton" required>
+                    </div>
+                </div>
+
+                <div class="divFila">
+                    <div class="divFilaColumn">
+                        <label for="visibilidad">Visibilidad:</label>
+                        <select id="slctVisibilidad" class="txtBackFond" name="visibilidad" required>
+                            <option value=""></option>
+                            <option value="Privado">Privado</option>
+                            <option value="Publico">Público</option>
+                        </select>
+                    </div>
+
+
+                    <div class="divFilaColumn">
+                        <label for="aptitudes">Aptitudes:</label>
+                        <input type="text" id="txtAptitudes" class="txtBackFond" name="aptitudes" required>
+                    </div>
+
+
+                    <div class="divFilaColumn">
+                        <label for="habilidades">Habilidades:</label>
+                        <input type="text" id="txtHabilidades" class="txtBackFond" name="habilidades" required>
+                    </div>
+
+                </div>
+
+                <div class="divFila">
+                    <div class="divFilaColumn">
+                        <label id="labelAcercaEmpleo" for="detail">Acerca del empleo:</label>
+                        <textarea type="text" id="txtDetail" class="txtDetail" name="detalles" maxlength="200"
+                            required></textarea>
+                    </div>
+                </div>
+
+                <div class="divFila">
+                    <div class="divFilaColumn">
+                        <label for="beneficios">Beneficios:</label>
+                        <textarea type="text" id="txtBeneficios" class="txtBeneficios" name="beneficios" maxlength="200"
+                            required></textarea>
+                    </div>
+
+                    <div class="divFilaColumn">
+                        <label for="responsabilidades">Responsabilidades:</label>
+                        <textarea type="text" id="txtResponsabilidades" class="txtResponsabilidades"
+                            name="responsabilidades" maxlength="200" required></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="divContainerButton">
+            <button id="btnCancelar" type="button">Volver</button>
+            <button id="btnPublicar" type="button">Modificar</button>
+        </div>
+    </main>
+    <!--Axios-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!--Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <!-- Servicio crear puesto -->
+    <script src="./js/services/servicesCrearPuestos.js"></script>
+    <!-- Controlador crear puesto -->
+    <script src="./js/controllers/controllersModificarPuesto.js"></script>
+    <script src="./js/controllers/controllersCerrarSesion.js"></script>
+
+</body>
+
+</html>

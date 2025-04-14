@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicaciones</title>
+  <link rel="icon" href="./img/imgIconoTalentoPublico.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/stylesHeaderUsuario.css">
+  <link rel="stylesheet" href="./css/stylesRevisarAplicaciones.css">
+</head>
+
+<body>
+  <header>
+    <a href="./homepage-usuario.html">
+      <img id="imgLogoBanner" src="./img/imgLogoTalentoPublico.png" alt="">
+    </a>
+    <nav>
+      <a href="./puestos.html">
+        <img id="imgLogoPuesto" src="./img/imgIconoMaletin.png" alt="Puestos">
+        <span class="spanText">Puestos</span>
+      </a>
+      <a href="./revisar-aplicaciones.html">
+        <img src="./img/imgIconoCarpeta.png" alt="Aplicaciones">
+        <span class="spanText">Aplicaciones</span>
+      </a>
+      <a href="./notificaciones.html">
+        <img src="./img/imgIconoNotificaciones.png" alt="Notificaciones">
+        <span class="spanText">Notificaciones</span>
+      </a>
+      <a href="./panel-usuario.html">
+        <img src="./img/imgIconoUsuarioFinalCafe.png" alt="Usuario">
+        <span class="spanText">Usuario</span>
+      </a>
+      <a href="" id="aCerrarSesion">
+        <img src="./img/imgIconoCerrarSesion.png">
+        <span class="spanText">Cerrar sesión</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="divMain">
+      <div id="divContainerTituloRevisarAplicaciones">
+        <h1 id="h1TitleRevisarAplicaciones">Mis aplicaciones</h1>
+      </div>
+
+      <div id="divContainerBusqueda">
+        <input type="date" id="inputBuscarDate">
+        <input type="text" id="inputBuscarDateTexto" placeholder="Buscar por término">
+        <button id="btnBuscar">Buscar</button>
+      </div>
+
+      <div id="divContainerCentrarTabla">
+        <table id="informacionRevisarAplicaciones">
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Puesto</th>
+              <th>Empresa</th>
+              <th>Ubicación</th>
+              <th>Estado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+    
+        </table>
+      </div>
+
+  </main>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+  <script src="./js/services/servicesRegistrarUsuario.js"></script>
+  <script src="./js/controllers/controllersRevisarAplicaciones.js"></script>
+
+  <script src="./js/controllers/controllersCerrarSesion.js"></script>
+</body>
+
+</html>

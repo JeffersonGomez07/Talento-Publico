@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Público</title>
+    <link rel="icon" href="./img/imgIconoTalentoPublico.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/stylesHeaderAdmin.css">
+    <link rel="stylesheet" href="./css/stylesInvitarEmpleado.css">
+</head>
+
+<body>
+    <header>
+        <a href="./homepage-admin.html">
+            <img id="imgLogoBanner" src="./img/imgLogoTalentoPublico.png" alt="">
+        </a>
+        <h1 id="h1TitleAdministrador">Administrador</h1>
+        <nav>
+            <a href="./invitar-empleado.html">
+                <img src="./img/imgIconoInvitarEmpleado.png" alt="Usuario">
+                <span class="spanText">Invitar empleado</span>
+            </a>
+            <a href="./administrar-empleados.html">
+                <img src="./img/imgIconoAdministrarEmpleados.png" alt="Usuario">
+                <span class="spanText">Administrar empleados</span>
+            </a>
+            <a href="./modificar-empresa.html">
+                <img src="./img/imgIconoModificarEmpresa.png" alt="Usuario">
+                <span class="spanText">Modificar empresa</span>
+            </a>
+            <a href="./ver-aplicaciones.html">
+                <img src="./img/imgIconoAplicaciones.png" alt="Usuario">
+                <span class="spanText">Aplicaciones</span>
+            </a>
+            <a href="" id="aCerrarSesion">
+                <img src="./img/imgIconoCerrarSesion.png" alt="Usuario">
+                <span class="spanText">Cerrar sesión</span>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div id="divContainerTnvitar">
+            <div class="divContainerDatos">
+                <form action="" id="formDatosEmpleado">
+                    <h1 id="h1TitleInvitarEmpleado">Modificar Empleado</h1>
+
+                    <label for="txtNombre">Nombre:</label>
+                    <input type="text" id="txtNombre" class="txtBackfond" required>
+
+                    <label for="txtApellido">Apellido 1:</label>
+                    <input type="text" id="txtApellido1" class="txtBackfond" required>
+
+                    <label for="txtApellido">Apellido 2:</label>
+                    <input type="text" id="txtApellido2" class="txtBackfond" required>
+
+                    <label for="position">Rol/Puesto:</label>
+                    <select class="txtBackfond" id="slctPosition" required>
+                        <option value=""></option>
+                        <option value="Manager">Manager</option>
+                        <option value="Reclutador">Reclutador</option>
+                    </select>
+
+                    <label for="txtCorreo">Correo Electrónico:</label>
+                    <input type="email" id="txtCorreo" class="txtBackfond" required>
+
+                    <label for="estado">Estado:</label>
+                    <select class="txtBackfond" id="slctEstado" required>
+                        <option value=""></option>
+                        <option value="Activo">Activo</option>
+                        <option value="Inactivo">Inactivo</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div id="divContainerButton">
+            <button Id="btnCancel" type="button">Volver</button>
+            <button Id="btnSubmit" type="button">Modificar</button>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="/public/js/services/servicesInvitarEmpleado.js"></script>
+        <script src="/public/js/controllers/controllersModificarDatosReclutadorManager.js"></script>
+        <script src="./js/controllers/controllersCerrarSesion.js"></script>
+    </main>
+</body>
+
+</html>

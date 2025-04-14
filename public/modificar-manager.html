@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Público</title>
+    <link rel="icon" href="./img/imgIconoTalentoPublico.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/stylesHeaderManager.css">
+    <link rel="stylesheet" href="./css/stylesModificarManager.css">
+</head>
+
+<body>
+    <header>
+        <a href="./homepage-manager.html">
+            <img id="imgLogoBanner" src="./img/imgLogoTalentoPublico.png" alt="">
+        </a>
+        <h1 id="h1TitleManager">Manager</h1>
+        <nav>
+            <a href="./crear-puesto.html">
+                <img src="./img/imgIconoCrearPuestos.png" alt="Usuario">
+                <span class="spanText">Crear puestos</span>
+            </a>
+            <a href="./administrar-puestos.html">
+                <img src="./img/imgIconoAdministrarPuestos.png" alt="Usuario">
+                <span class="spanText">Administrar puestos</span>
+            </a>
+            <a href="./ver-aplicaciones-manager.html">
+                <img src="./img/imgIconoAplicaciones.png" alt="Usuario">
+                <span class="spanText">Aplicaciones</span>
+            </a>
+            <a href="./modificar-manager.html">
+                <img src="./img/imgIconoModificarUsuario.png" alt="Usuario">
+                <span class="spanText">Modificar usuario</span>
+            </a>
+            <a href="" id="aCerrarSesion">
+                <img src="./img/imgIconoCerrarSesion.png" alt="Usuario">
+                <span class="spanText">Cerrar sesión</span>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <h1 id="h1TitlePaneldeUsuario">Panel de manager</h1>
+        <div id="divContainerBienvenida">
+            <div id="divTextoBienvenida">
+                <br>
+                <div class="divImagen">
+                    <div class="divImg">
+                        <img src="./img/imgIconoUsuarioFinal.png" id="imgPerfildeusuario" alt="Foto de perfil">
+                    </div>
+                </div>
+
+                <div id="divContainerTextoPersona">
+                    <h2 id="h2TitleInformacionPersonal">Información manager</h2>
+                    <hr>
+                    <label id="labelNombre">Nombre:</label><br>
+                    <div id="divContainerNombre">
+                        <p id="nombre">Usuario</p><br>
+                        <p id="apellido1">Apellido1</p>
+                        <p id="apellido2">Apellido2</p>
+                    </div><br>
+                    <label id="labelCorreo">Correo Electrónico:</label><br>
+                    <p id="correo">correo@empresa.com</p><br>
+                </div>
+
+                <div id="divContainerButtons">
+                    <button onclick="window.location.href = 'modificar-datos-manager.html';"
+                        id="btnModificarDatos">Modificar datos</button>
+                    <button onclick="window.location.href = 'cambiar-contrasenna-manager.html';"
+                        id="btnModificarContrasenna">Modificar contraseña</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="./js/services/servicesInvitarEmpleado.js"></script>
+    <script src="./js/controllers/controllersModificarManagerYReclutador.js"></script>
+    <script src="./js/controllers/controllersCerrarSesion.js"></script>
+
+</body>
+
+</html>

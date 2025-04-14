@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talento Público</title>
+  <link rel="icon" href="./img/imgIconoTalentoPublico.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/stylesInicioSesion.css">
+</head>
+
+<body> 
+  <main>
+    <div class="divContainerInicioSesion">
+      <img src="./img/imgIconoUsuarioFinal.png" id="perfil" alt="Imagen de perfil">
+      <h1 id="h1TitleIniciarSesion">Iniciar sesión</h1>
+      <form id="formInicioSesion">
+        <label for="txtCorreo">Correo electrónico*</label>
+        <input type="email" id="txtCorreo" class="txtBackFond" required>
+        <div id="divContainerContrasenna">
+          <label for="txtContrasenna">Contraseña*</label>
+          <input type="password" id="txtContrasenna" class="txtBackFond" required>
+          <span class="spanAlternarContrasenna"></span>
+        </div>
+        <button id="btnIniciarSesion" type="submit" value="Acceder">Acceder</button>
+      </form>
+      <div id="divContainerLinksCuentaContra">
+        <a href="./como-registrarse.html">¿No tienes cuenta?</a>
+        <a href="./recuperar-contrasenna.html">¿Olvidaste tu contraseña?</a><br>
+      </div>
+    </div>
+  </main>
+ <!--Axios-->
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+ <!--Sweet Alert-->
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+ <!-- Servicio registrar empresa -->
+ <script src="./js/services/servicesInicioSesion.js"></script>
+ <!-- Controlador registro -->
+ <script src="./js/controllers/controllersInicioSesion.js"></script>
+</body>
+
+</html>

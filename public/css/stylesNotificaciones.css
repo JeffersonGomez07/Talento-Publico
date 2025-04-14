@@ -1,0 +1,179 @@
+body {
+    font-family: Arial;
+}
+
+#divContainerTitulo {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #6D8B74;
+    border-radius: 20px;
+    margin-top: 40px;
+    text-align: center;
+    max-width: 900px;
+}
+
+#h1TitleNotificaciones {
+    color: white;
+    font-size: 35px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+a.cambiarcolor {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.divContainerCorreo {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: #453431;
+}
+
+.divContainerCorreo img {
+    width: 70px;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.divContainerCorreoInfo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.divContainerCorreo p {
+    margin-right: 15px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.divContainerButtonCorreo {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.divContainerButtonCorreo button {
+    position: relative;
+    padding: 5px 10px;
+    background-color: #453431;
+    border: none;
+    border-radius: 4px;
+    color: #6D8B74;
+    font-family: "Material Symbols Outlined";
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+    font-size: 60px;
+    transform: scale(1);
+}
+
+#divContainerBusqueda {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+#inputBuscarDate {
+    padding: 5px 48px;
+    background-color: #453431;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    text-indent: 5px;
+}
+
+#inputBuscarDateTexto {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 80px;
+    background-color: #453431;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    width: 420px;
+}
+
+#inputBuscarDateTexto::placeholder {
+    text-align: center;
+    color: white;
+}
+
+#btnBuscar {
+    padding: 10px 20px;
+    background-color: #6D8B74;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#inputBuscarDate[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+
+#divContainerCentrarTabla {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 7px;
+    width: 70%;
+}
+
+th {
+    background-color: #453431;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+td {
+    padding: 10px;
+    background-color: #6D8B74;
+    border-radius: 20px;
+    width: 100px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+#divContainerTituloRevisarAplicaciones {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #6D8B74;
+    border-radius: 20px;
+    margin-top: 40px;
+    text-align: center;
+    width: 900px;
+}
+
+.btnEliminar {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #F0E9D7;
+    border: none;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talento Público</title>
+  <link rel="icon" href="./img/imgIconoTalentoPublico.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/stylesRecuperarContraseña.css">
+</head>
+
+<body>
+  <main>
+    <form id="formRecuperar">
+      <h1 id="h1TitleRecuperarContra">Recuperar Contraseña</h1>
+      <label for="email" id="labelCorreo">Correo electrónico:</label><br>
+      <input type="email" id="txtEmail" class="txtBackFond" name="email" required><br><br>
+      <div class="divContainerButton">
+        <button onclick="window.location.href = './inicio-sesion.html';" type="button"
+          id="btnVolver">Volver</button>
+        <button type="submit" id="btnEnviar">Enviar</button>
+      </div>
+    </form>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./js/services/servicesRestablecerContrasenna.js"></script>
+  <script src="./js/controllers/controllersRecuperarContraseña.js"></script>
+</body>
+
+</html>

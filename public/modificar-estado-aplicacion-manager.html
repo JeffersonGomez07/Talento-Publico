@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talento Público</title>
+  <link rel="icon" href="./img/imgIconoTalentoPublico.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/stylesHeaderAdmin.css">
+  <link rel="stylesheet" href="./css/stylesModificarEstadoAplicacion.css">
+</head>
+
+<body>
+  <header>
+    <a href="./homepage-admin.html">
+      <img id="imgLogoBanner" src="./img/imgLogoTalentoPublico.png" alt="">
+    </a>
+    <h1 id="h1TitleAdministrador">Administrador</h1>
+    <nav>
+      <a href="./invitar-empleado.html">
+        <img src="./img/imgIconoInvitarEmpleado.png" alt="Usuario">
+        <span class="spanText">Invitar empleado</span>
+      </a>
+      <a href="./administrar-empleados.html">
+        <img src="./img/imgIconoAdministrarEmpleados.png" alt="Usuario">
+        <span class="spanText">Administrar empleados</span>
+      </a>
+      <a href="./ver-aplicaciones.html">
+        <img src="./img/imgIconoAplicaciones.png" alt="Usuario">
+        <span class="spanText">Aplicaciones</span>
+      </a>
+      <a href="./modificar-empresa.html">
+        <img src="./img/imgIconoModificarEmpresa.png" alt="Usuario">
+        <span class="spanText">Modificar empresa</span>
+      </a>
+      <a href="" id="aCerrarSesion">
+        <img src="./img/imgIconoCerrarSesion.png" alt="Usuario">
+        <span class="spanText">Cerrar sesión</span>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <form id="formEstado">
+      <h1 id="h1TitleEstado">Estado aplicacion</h1>
+      <select id="slctEstado">
+        <option value="Revisión">Revisión</option>
+        <option value="Aceptada">Aceptada</option>
+        <option value="Denegada">Denegada</option>
+      </select>
+    </form>
+    
+    <div id="divContainerButton">
+      <button onclick="window.location.href = 'ver-aplicaciones-manager.html';" id="btnCancel" type="button">Volver</button>
+      <button Id="btnSubmit" type="button">Modificar</button>
+    </div>
+  </main>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="./js/services/servicesRegistrarUsuario.js"></script>
+  <script src="./js/controllers/controllersEstadoAplicacion.js"></script>
+  <script src="./js/controllers/controllersCerrarSesion.js"></script>
+</body>
+
+</html>

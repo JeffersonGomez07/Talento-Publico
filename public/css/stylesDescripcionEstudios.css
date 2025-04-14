@@ -1,0 +1,74 @@
+body {
+  font-family: Arial;
+}
+
+#h1TitleEstudio {
+  text-align: center;
+  padding: 10px;
+  width: 52.5%;
+  margin: 0 auto;
+  border-radius: 20px;
+  color: white;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #6D8B74;
+}
+
+#divContainerEstudios {
+  background-color: #453431;
+  border-radius: 20px;
+  width: 50%;
+  padding: 200px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  margin: 15px auto;
+  margin-bottom: 7px;
+  height: 90px;
+}
+
+.estudios{
+  display: flex;
+  flex-direction: row;
+}
+
+.estudiostop{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+#divContainerEstudiosAll{
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+p {
+  color: white;
+}
+
+#divContainerButton {
+  display: flex;
+  position: absolute;
+  top: 660px;
+  left: 640px;
+}
+
+#btnVolver {
+  background-color: #D82F2F;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+#btnVolver:hover {
+  background-color: #f4220a;
+}

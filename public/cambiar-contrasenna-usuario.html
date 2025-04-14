@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talento Público</title>
+  <link rel="icon" href="./img/imgIconoTalentoPublico.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/stylesHeaderUsuario.css">
+  <link rel="stylesheet" href="./css/stylesCambiarContrasenna.css">
+</head>
+
+<body>
+  <header>
+    <a href="./homepage-usuario.html">
+        <img id="imgLogoBanner" src="./img/imgLogoTalentoPublico.png" alt="">
+    </a>
+    <nav>
+        <a href="./puestos.html">
+            <img src="./img/imgIconoMaletin.png" alt="Puestos">
+            <span class="spanText">Puestos</span>
+        </a>
+        <a href="./revisar-aplicaciones.html">
+            <img src="./img/imgIconoCarpeta.png" alt="Aplicaciones">
+            <span class="spanText">Aplicaciones</span>
+        </a>
+        <a href="./notificaciones.html">
+            <img src="./img/imgIconoNotificaciones.png" alt="Notificaciones">
+            <span class="spanText">Notificaciones</span>
+        </a>
+        <a href="./panel-usuario.html">
+            <img src="./img/imgIconoUsuarioFinal.png" alt="Usuario">
+            <span class="spanText">Usuario</span>
+        </a>
+        <a href="" id="aCerrarSesion">
+            <img src="./img/imgIconoCerrarSesion.png" alt="Cerrar sesión">
+            <span class="spanText">Cerrar sesión</span>
+        </a>
+    </nav>
+</header>
+  <main>
+    <form id="formCambiar">
+      <h1 id="h1TitleCambiarContra">Cambiar contraseña</h1>
+      <label for="email" id="labelCorreo">Contraseña anterior:</label><br>
+      <input type="password" id="txtContrasennaAnterior" class="txtBackFond" name="email" required><br><br>
+      <label for="email" id="labelCorreo">Contraseña nueva:</label><br>
+      <input type="password" id="txtContrasennaNueva" class="txtBackFond" name="email" required><br><br>
+      <div class="divContainerButton">
+        <button onclick="window.location.href = 'panel-usuario.html';" type="button" id="btnVolver">Volver</button>
+        <button type="submit" id="btnEnviar">Confirmar</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/services/servicesCambiarContrasennaUsuario.js"></script>
+  <script src="./js/services/servicesRegistrarUsuario.js"></script>
+  <script src="./js/controllers/controllersCambiarContraseñaUsuario.js"></script>
+  <script src="./js/controllers/controllersCerrarSesion.js"></script>
+
+</body>
+
+</html>

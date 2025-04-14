@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talento Público</title>
+  <link rel="icon" href="./img/imgIconoTalentoPublico.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/stylesHeaderReclutador.css">
+  <link rel="stylesheet" href="./css/stylesFiltrarUsuarios.css">
+</head>
+
+<body>
+  <header>
+    <a href="./homepage-reclutador.html">
+      <img id="imgLogoBanner" src="./img/imgLogoTalentoPublico.png" alt="">
+    </a>
+    <h1 id="h1TitleReclutador">Reclutador</h1>
+    <nav>
+      <a href="./invitar-aplicar.html">
+        <img src="./img/imgIconoInvitarYFiltrar.png" alt="Usuario">
+        <span class="spanText">Invitar y filtrar</span>
+      </a>
+      <a href="./ver-aplicaciones-reclutador.html">
+        <img src="./img/imgIconoAplicaciones.png" alt="Usuario">
+        <span class="spanText">Aplicaciones</span>
+      </a>
+      <a href="./modificar-reclutador.html">
+        <img src="./img/imgIconoModificarUsuario.png" alt="Usuario">
+        <span class="spanText">Modificar usuario</span>
+      </a>
+      <a href="" id="aCerrarSesion">
+        <img src="./img/imgIconoCerrarSesion.png" alt="Usuario">
+        <span class="spanText">Cerrar sesión</span>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <div id="divContainerAll">
+      <div id="divContainerCentrarTitulo">
+        <h1 id="h1TitleFiltrarUsuarios">Filtrar usuarios</h1>
+      </div>
+      <div id="divContainerBuscador">
+        <input type="text" id="buscadorInput" placeholder="Buscar">
+        <button id="btnBuscar"><img src="./img/imgIconoLupa.png" alt=""></button>
+      </div>
+      <div id="divContainerCentrarTabla">
+        <table id="informacion_usuarios">
+          <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Correo</th>
+            <th>Estudios</th>
+            <th>Experiencia</th>
+            <th>Invitar</th>
+          </tr>
+          <tr>
+            <td>Carlos</td>
+            <td>González Fernández</td>
+            <td>carlos@example.com</td>
+            <td><button class="btnVerDetalles">Ver detalles</button></td>
+            <td><button class="btnVerDetalles">Ver detalles</button></td>
+            <td>
+              <button type="button" class="btnEnviar">Enviar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Felipe</td>
+            <td>Clancy Rodríguez</td>
+            <td>felipe@example.com</td>
+            <td><button class="btnVerDetalles">Ver detalles</button></td>
+            <td><button class="btnVerDetalles">Ver detalles</button></td>
+            <td>
+              <button type="button" class="btnEnviar">Enviar</button>
+            </td>
+          </tr>
+          </tr>
+          <tr>
+            <td>Veronica</td>
+            <td>López Pérez</td>
+            <td>veronica@example.com</td>
+            <td><button class="btnVerDetalles">Ver detalles</button></td>
+            <td><button class="btnVerDetalles">Ver detalles</button></td>
+            <td>
+              <button type="button" class="btnEnviar">Enviar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Samuel</td>
+            <td>González Martínez</td>
+            <td>samuel@example.com</td>
+            <td><button class="btnVerDetalles">Ver detalles</button></td>
+            <td><button class="btnVerDetalles">Ver detalles</button></td>
+            <td>
+              <button type="button" class="btnEnviar">Enviar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Ignacio</td>
+            <td>Sánchez Torres</td>
+            <td>ignacio@example.com</td>
+            <td><button class="btnVerDetalles">Ver detalles</button></td>
+            <td><button class="btnVerDetalles">Ver detalles</button></td>
+            <td>
+              <button type="button" class="btnEnviar">Enviar</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </main>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="./js/services/servicesInvitarPuesto.js"></script>
+  <script src="./js/services/servicesRegistrarUsuario.js"></script>
+  <script src="./js/services/servicesCrearPuestos.js"></script>
+  <script src="./js/controllers/controllersFiltrarUsuario.js"></script>
+  <script src="./js/controllers/controllersCerrarSesion.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+body {
+  font-family: Arial;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 7px;
+  width: 90%;
+}
+
+th {
+  background-color: #453431;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+td {
+  padding: 10px;
+  background-color: #6D8B74;
+  border-radius: 20px;
+  width: 100px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+#divContainerAll {
+  width: 100%;
+  display: inline-block;
+  margin-top: 120px;
+  justify-content: center;
+  text-align: center;
+}
+
+#h1TitleFiltrarUsuarios {
+  background-color: #6D8B74;
+  width: 100%;
+  padding: 20px 0px;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+#divContainerBuscador {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;    
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  background-color: #453431;
+  color: white;
+  width: 88%;
+  padding: 5px;
+}
+
+#buscadorInput{
+  margin-left: 2%;
+  width: 90%;
+  padding: 5px;
+  background-color: #453431;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  font-size: 18px;
+  text-indent: 20px;
+}
+
+#buscadorInput::placeholder{
+  text-align: center;
+  color: white;
+}
+
+#btnBuscar{
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#btnBuscar img{
+  width: 25px;
+}
+
+
+#divContainerCentrarTabla {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#divContainerCentrarTitulo {
+  width: 88.8%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.btnEnviar{
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #F0E9D7;
+  cursor: pointer;
+}
+
+.btnVerDetalles{
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #F0E9D7;
+  cursor: pointer;
+}

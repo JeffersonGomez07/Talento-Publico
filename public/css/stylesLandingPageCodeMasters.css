@@ -1,0 +1,610 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #7E1717;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header ul {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+header a {
+    text-decoration: none;
+    color: #7E1717;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btnUltimoProyecto {
+    margin-right: 20px;
+    background-color: #7E1717;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#imgLogoBanner {
+    height: 110px;
+    padding: 5px;
+}
+
+#divContainerBienvenida {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    margin: 5% 0 10%;
+}
+
+#divTextoBienvenida {
+    margin-left: 70px;
+    line-height: 25px;
+    text-align: justify;
+    width: 40%;
+    font-size: 15px;
+    color: #293237;
+}
+
+#h1TitleBienvenida {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-bottom: 2px;
+    line-height: 40px;
+    color: #7E1717;
+}
+
+#divImagenBienvenida {
+    width: 400px;
+    margin-left: 100px;
+}
+
+#h1SobreNosotros {
+    text-align: center;
+    background-color: #7E1717;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 0 10%;
+}
+
+#divContainerMision {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+#divTextoMision {
+    margin-right: 10%;
+    line-height: 25px;
+    text-align: justify;
+    width: 50%;
+    color: #293237;
+}
+
+#h2TitleMision {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-bottom: 2px;
+    color: #7E1717;
+}
+
+#divImagenMision img {
+    margin-right: 50px;
+}
+
+#divContainerVision {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+#divTextoVision {
+    margin-right: 10%;
+    line-height: 25px;
+    text-align: justify;
+    width: 50%;
+    color: #293237;
+}
+
+#h2TitleVision {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-bottom: 2px;
+    color: #7E1717;
+}
+
+#divImagenVision img {
+    margin-right: 50px;
+}
+
+#divContainerValores {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.circle-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.olCircleList li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.spanCircleNumber {
+    position: absolute;
+    left: -30px;
+    top: 20px;
+    background-color: #7E1717;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.spanCircleContent {
+    margin-left: 10px;
+}
+
+#divContainerValores li {
+    margin-bottom: 20px;
+}
+
+#divTextoValores {
+    margin-left: 70px;
+    line-height: 25px;
+    text-align: justify;
+    width: 100%;
+    margin: 0 14%;
+}
+
+#h2TitleValores {
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 1%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #7E1717;
+}
+
+#divContenedorMiembros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#divMiembros {
+    margin-top: 50px;
+}
+
+.divMiembro {
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    background: #efefef;
+    margin: 15px 20px;
+}
+
+.divMiembro .divImagen {
+    display: flex;
+    justify-content: center;
+}
+
+.divMiembro .divImagen .divImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.divMiembro .divImagen .divImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.divMiembro .divDescripcion {
+    margin-top: 15px;
+    height: 200px;
+}
+
+.divMiembro .divDescripcion h3 {
+    color: black;
+    text-align: center;
+}
+
+.divMiembro .divDescripcion h4 {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.divMiembro .divDescripcion p {
+    margin-top: 10px;
+    font-size: 15px;
+    margin: 10px 20px;
+    text-align: justify;
+    line-height: 16px;
+}
+
+#h1Miembros {
+    text-align: center;
+    background-color: #7E1717;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 0 10%;
+    margin-bottom: 40px;
+}
+
+#divContainerProyectosFondo {
+    height: 500px;
+    margin-top: 100px;
+}
+
+#h1Proyectos {
+    text-align: center;
+    background-color: #7E1717;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 0 10%;
+}
+
+#divContainerProyectos {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+#divTextoProyectos {
+    margin-right: 10%;
+    line-height: 25px;
+    text-align: justify;
+    width: 50%;
+    color: #293237;
+}
+
+#h2TitleProyectos {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-bottom: 2px;
+    color: #7E1717;
+}
+
+#divImagenProyectos img {
+    width: 200px;
+    margin-right: 50px;
+}
+
+#divImagenProyectos {
+    display: flex;
+    flex-direction: column;
+}
+
+#btnUltimoProyecto {
+    margin-top: 20px;
+}
+
+#divCopyLogo {
+    margin: 0 200px;
+    display: flex;
+}
+
+#imgLogoFooter {
+    height: 250px;
+    display: flex;
+}
+
+#h1Copy {
+    margin-top: 122px;
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: #7E1717;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer li {
+    margin-top: 65px;
+}
+
+footer a {
+    padding: 0 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+@media (max-width:600px) {
+
+    header {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    header li {
+        padding: 0;
+    }
+
+    header nav {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    header a {
+        padding: 3px 3px;
+        border-width: 2px;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    #imgLogoBanner {
+        width: 25%;
+        height: auto;
+    }
+
+    #btnUltimoProyecto {
+        width: 150px;
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    #divContainerBienvenida {
+        width: 100%;
+        height: 100%;
+    }
+
+    #divTextoBienvenida {
+        margin-left: 17%;
+    }
+
+    #imgBienvenida {
+        display: none;
+    }
+
+    #h1TitleBienvenida {
+        font-size: 17px;
+        text-align: left;
+        font-weight: bold;
+        margin: 0 auto;
+        width: 270px;
+    }
+
+    #divTextoBienvenida p {
+        margin-left: 0px;
+        font-size: 14px;
+        width: 270px;
+    }
+
+    #divContainerSobreNosotros {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+   
+
+    #divContainerMision {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #h2TitleMision #h2TitleVision #h2TitleValores {
+        font-size: 20px;
+    }
+
+    #divContainerVision {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    #divContainerValores {
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+        margin-top: 17px;
+    }
+
+    #divTextoMision p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    #divContainerVision p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    #divContenedorMiembros {
+        width: 100%;
+        height: 100%;
+    }
+
+    .divMiembro {
+        width: 70%;
+        height: auto;
+        border-radius: 5px;
+        background: #efefef;
+        margin: 15px 20px;
+    }
+
+    .divMiembro img {
+        height: auto;
+        margin-top: 10px;
+    }
+
+    #divContenedorMiembros p {
+
+        font-size: 14px;
+        margin: 10px 20px;
+        text-align: justify;
+
+    }
+
+    #divContenedorMiembros {
+        font-size: 15px;
+    }
+
+    .divImg {
+        margin-top: 10px;
+    }
+
+    #h1Proyectos {
+        margin-top: 25px;
+        margin-bottom: 40px;
+    }
+
+
+    #divContainerProyectos {
+        width: 100%;
+        height: 100%;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    #divTextoProyectos p {
+        font-size: 12px;
+    }
+
+    #h2TitleProyectos {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #divContainerProyectosFondo {
+        height: 100%;
+        width: 100%;
+    }
+
+    #divContainerProyectos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #divTextoProyectos{
+        margin-left: 20px;
+        width: 77%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        padding: 20px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer a {
+        font-size: 15px;
+        width: 30%;
+    }
+
+    footer ul {
+        display: flex;
+    }
+
+    footer a {
+        padding: 0 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    #imgLogoFooter {
+        margin-top: 10px;
+        height: 60px;
+        position: absolute;
+        left: 30px;
+    }
+
+    #h1Copy {
+        margin-top: 20px;
+        font-size: 15px;
+        color: white;
+        font-weight: bold;
+        margin-left: 20px;
+        width: 100%;
+        position: absolute;
+        left: 140px;
+        width: 50%;
+    }
+
+    #divCopyLogo {
+        width: 100%;
+    }
+}
